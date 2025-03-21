@@ -477,7 +477,7 @@
     <!-- Login Page -->
     <div id="loginPage" class="auth-container">
       <div class="auth-card">
-        <h2 class="auth-title">Login to Your Portfolio</h2>
+        <h2 class="auth-title">Login</h2>
         <form id="loginForm" onsubmit="handleLogin(event)">
           <div class="form-group">
             <label for="loginEmail">Email</label>
@@ -872,8 +872,12 @@
       
       let gpa = 0;
       if (mark >= 80) gpa = 5;
+      else if (mark >= 75) gpa = 4.5;
       else if (mark >= 70) gpa = 4;
+      else if (mark >= 75) gpa = 4.5;
+      else if (mark >= 65) gpa = 3.5;
       else if (mark >= 60) gpa = 3;
+      else if (mark >= 55) gpa = 2.5;
       else if (mark >= 50) gpa = 2;
       else if (mark >= 40) gpa = 1;
       
